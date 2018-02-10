@@ -1,0 +1,14 @@
+{
+  "name": "Crypto",
+  "version": "1.0.0",
+  "description": "Cryptos' Market Visualizer",
+  "repository": "electron_apps",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron app.js"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.6.7"
+  }
+}

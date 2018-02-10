@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        text-align: center;
+      }
+    </style>
+
+    <title>Crypto</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/photon.css">
+
+    <!-- Javascript -->
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
+
+  </head>
+  <body>
+    <div class="window">
+      <!-- Your app's content goes inside .window-content -->
+      <div class="window-content">
+        <div class="pane-group">
+
+          <input type="button" class="btn btn-large" id="backBtn" value="Go Back">
+
+          <!-- Searched coin -->
+          <div class="pane">
+              <ul id="coin"></ul>
+          </div>
+          <!-- end searched coin -->
+
+        </div>
+        <!-- end panel group -->
+
+      </div>
+    </div>
+
+    <script src="search.js"></script>
+    
+  </body>
+</html>

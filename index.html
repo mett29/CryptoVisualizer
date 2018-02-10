@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        text-align: center;
+      }
+    </style>
+
+    <title>Crypto</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/photon.css">
+
+    <!-- Javascript -->
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
+
+  </head>
+  <body>
+    <div class="window">
+      <!-- Your app's content goes inside .window-content -->
+      <div class="window-content">
+        <div class="pane-group">
+          <div class="pane-one-fourth sidebar">
+            <ul class="list-group" id="tweetsList">
+              
+              <!-- search bar -->
+              <li class="list-group-header">
+                <label>Enter Currency</label><br>
+                <input type="text" id="item">
+              </li>
+              <li class="list-group-header">
+                <input type="button" class="btn btn-large btn-primary" id="searchBtn" value="Search">                  
+              </li>
+
+              <a class="twitter-timeline"  href="https://twitter.com/hashtag/cryptocurrencies" data-widget-id="959191653855760390">Tweets about #cryptocurrencies</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+             
+            </ul>
+          </div>
+
+          <!-- List of coins -->
+          <div class="pane">
+              <div class="container" id="loadingPage">
+                <img src="img/loading.gif"></img>
+              </div>
+              <ul id="coinList"></ul>
+          </div>
+          <!-- end list of coins -->
+        </div>
+        <!-- end panel group -->
+
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+    
+  </body>
+</html>
